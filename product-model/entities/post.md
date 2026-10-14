@@ -17,12 +17,17 @@ references:
 - kind: code
   role: implementation
   target: ext/approval/main.php#Approval
+- kind: code
+  role: implementation
+  target: ext/approval/main.php#onDatabaseUpgrade
 ---
 
 # Post
 
 One uploaded file on the board with the information people attach to it.
 While the board does not run the approval queue, every post is Approved.
+Turning on the approval queue sends every post already on the board to
+Pending approval, so they stay hidden until someone approves them.
 
 ## Information kept
 
