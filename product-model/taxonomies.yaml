@@ -1,0 +1,10 @@
+scenarioKinds:
+- id: primary
+  name: Primary
+  description: The main path through the behavior.
+- id: validation
+  name: Validation
+  description: Input or permission the Product refuses.
+- id: edge
+  name: Edge
+  description: A conflict, limit or unusual condition the Product handles.
